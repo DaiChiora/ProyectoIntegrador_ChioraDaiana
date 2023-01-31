@@ -9,6 +9,7 @@ import { RedesComponent } from './components/redes/redes.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaYEducacionComponent } from './components/experiencia-y-educacion/experiencia-y-educacion.component';
+import { PorcentajesComponent } from './components/porcentajes/porcentajes.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ExperienciaYEducacionComponent } from './components/experiencia-y-educa
     BannerComponent,
     AcercaDeComponent,
     ExperienciaYEducacionComponent,
+    PorcentajesComponent,
    
   ],
   imports: [
