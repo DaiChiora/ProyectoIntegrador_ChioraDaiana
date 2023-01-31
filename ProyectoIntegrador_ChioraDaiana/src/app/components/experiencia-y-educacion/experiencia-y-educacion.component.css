@@ -16,3 +16,10 @@ span {
 p {
     text-align: justify;
 }
+h5 {
+    padding-top: 40px;
+}
+h3 {
+    font-size: 35px;
+    padding: 40px;
+}
