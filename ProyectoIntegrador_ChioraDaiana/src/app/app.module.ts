@@ -11,6 +11,7 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaYEducacionComponent } from './components/experiencia-y-educacion/experiencia-y-educacion.component';
 import { PorcentajesComponent } from './components/porcentajes/porcentajes.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     AcercaDeComponent,
     ExperienciaYEducacionComponent,
     PorcentajesComponent,
+    ProyectosComponent,
    
   ],
   imports: [
