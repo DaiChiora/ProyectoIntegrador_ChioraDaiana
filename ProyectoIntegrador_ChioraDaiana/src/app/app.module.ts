@@ -12,7 +12,8 @@ import { ExperienciaYEducacionComponent } from './components/experiencia-y-educa
 import { PorcentajesComponent } from './components/porcentajes/porcentajes.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
-import { FooterComponent } from './component/footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { FooterComponent } from './component/footer/footer.component';
     PorcentajesComponent,
     ProyectosComponent,
     FooterComponent,
+    
    
   ],
   imports: [
