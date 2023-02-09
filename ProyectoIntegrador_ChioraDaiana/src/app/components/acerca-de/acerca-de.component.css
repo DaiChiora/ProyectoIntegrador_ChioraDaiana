@@ -35,7 +35,7 @@ div {
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 5%;
-        top: 27%;
+        top: 50%;
         position: absolute;
         max-width: 20%;
     }
@@ -64,12 +64,12 @@ div {
     }
 }
 
-@media (max-width: 727px) {
+@media (max-width: 770px) {
     img {
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 5%;
-        top: 26%;
+        top: 70%;
         position: absolute;
         max-width: 20%;
     }
@@ -102,7 +102,7 @@ div {
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 30%;
-        top: 25%;
+        top: 65%;
         position: absolute;
         max-width: 35%;
     }
@@ -136,7 +136,7 @@ div {
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 30%;
-        top: 23%;
+        top: 130%;
         position: absolute;
         max-width: 35%;
     }
@@ -170,7 +170,7 @@ div {
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 30%;
-        top: 55%;
+        top: 130%;
         position: absolute;
         max-width: 35%;
     }
