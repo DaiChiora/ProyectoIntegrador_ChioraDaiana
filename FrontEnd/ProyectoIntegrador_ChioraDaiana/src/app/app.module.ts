@@ -14,7 +14,6 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +31,8 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
