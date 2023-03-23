@@ -12,7 +12,9 @@ import { PorcentajesComponent } from './components/porcentajes/porcentajes.compo
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     PorcentajesComponent,
     ProyectosComponent,
     FooterComponent,
+
     
    
   ],
@@ -32,7 +35,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
    
   ],
   providers: [],
