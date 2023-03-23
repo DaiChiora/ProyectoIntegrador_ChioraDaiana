@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { usuario } from 'src/app/model/usuario.model';
+import { UsuarioService } from 'src/app/service/usuario.service';
 
-import { PersonaService } from 'src/app/service/usuario.service';
+
 
 @Component({
   selector: 'app-acerca-de',
@@ -14,7 +15,7 @@ export class AcercaDeComponent implements OnInit {
   constructor(public usuarioService: UsuarioService) {}
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data => {this.persona = data})
+    this.usuarioService.getUser().subscribe(data => {this.usuario = data})
   }
 
 }

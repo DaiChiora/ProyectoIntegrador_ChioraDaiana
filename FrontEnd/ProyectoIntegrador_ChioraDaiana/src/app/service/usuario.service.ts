@@ -7,12 +7,12 @@ import { usuario } from '../model/usuario.model';
   providedIn: 'root'
 })
 
-export class PersonaService {
-    URL = 'https://localhost:8080/usuario/';
+export class UsuarioService {
+    URL = 'http://localhost:8080/usuario/';
 
   constructor(private http: HttpClient) { }
 
   public getUser(): Observable<usuario>{
-    return this.http.get<usuario>(this.URL+ 'id/{id}');
+    return this.http.get<usuario>(this.URL+ 'id/1');
   }
 }
