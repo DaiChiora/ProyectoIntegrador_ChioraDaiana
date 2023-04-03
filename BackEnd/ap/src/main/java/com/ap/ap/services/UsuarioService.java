@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -34,7 +35,7 @@ public class UsuarioService {
     public void borrarUsuario(Long id){
         usuarioRepo.deleteById(id);
     }
-    public Usuario buscarUsuarioPorId(Long id){
-        return usuarioRepo.findById(id).orElseThrow(() ->new UserNotFoundException("Usuario no encontrado"));
+    public Optional<Usuario> buscarUsuarioPorId(Long id){
+        return usuarioRepo.findById(id);
     }
 }

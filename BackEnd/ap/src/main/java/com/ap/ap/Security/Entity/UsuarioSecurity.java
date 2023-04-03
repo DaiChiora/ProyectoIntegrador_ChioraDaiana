@@ -1,7 +1,7 @@
 
 package com.ap.ap.Security.Entity;
 
-import com.sun.istack.NotNull;
+
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.Column;
@@ -13,6 +13,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.validation.constraints.NotNull;
+
 
 
 @Entity
@@ -31,7 +33,7 @@ public class UsuarioSecurity {
     private String password;
       @ManyToMany(fetch = FetchType.EAGER)
       @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name = "usuario_id"), inverseJoinColumns = @JoinColumn(name = "rol_id"))
-      private Set<Rol> roles = new HashSet<> ();
+      private Set<Rol> roles = new HashSet <>();
       
       //Constructores
       

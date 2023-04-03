@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional
-public class UsuarioService {
+public class UsuarioServiceSecurity {
     @Autowired
     IUsuarioRepository iusuarioRepository;
     
@@ -18,12 +18,8 @@ public class UsuarioService {
         return iusuarioRepository.findByNombreUsuario(nombreUsuario);
     }
     
-    public boolean existsByNombreUsuario (String nombreUsuario) {
-        return iusuarioRepository.existsByNombreUsuario (nombreUsuario);
-    }
-        public boolean existsByEmail (String email) {
-        return iusuarioRepository.existsByEmail (email);
-    }
+
+
     public void save (UsuarioSecurity usuarioSecurity) {
         iusuarioRepository.save (usuarioSecurity);
     }

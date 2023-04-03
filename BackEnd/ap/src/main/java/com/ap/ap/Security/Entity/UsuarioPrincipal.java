@@ -3,9 +3,11 @@ package com.ap.ap.Security.Entity;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
 
 public class UsuarioPrincipal implements UserDetails {
 
@@ -25,7 +27,8 @@ public class UsuarioPrincipal implements UserDetails {
     }
 
     public static UsuarioPrincipal build(UsuarioSecurity usuarioSecurity) {
-        List<GrantedAuthority> authorities = usuarioSecurity.getRoles().stream().map(rol -> new SimpleGrantedAuthority(rol.getRolNombre().name())).collect(Collectors.toList());
+        List<GrantedAuthority> authorities = usuarioSecurity.getRoles().stream()
+                .map(rol -> new SimpleGrantedAuthority(rol.getRolNombre().name())).collect(Collectors.toList());
         return new UsuarioPrincipal(usuarioSecurity.getNombre(), usuarioSecurity.getNombreUsuario(), usuarioSecurity.getEmail(), usuarioSecurity.getPassword(), authorities);
     }
 
